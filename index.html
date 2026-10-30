@@ -2620,9 +2620,9 @@ var SECTIONS_P = [
   { id: 'sec-spring', title: 'The Spring Equation', lede: 'This goes with BDH Section 2.3, pages 183 and 184, and Section 3.6, pages 336 and 337. Paul’s [Mechanical Vibrations](' + T_VIB[0] + ') page is a second explanation. Paul writes `u` for the position and `γ` for the damping coefficient, and his spring hangs vertically.' },
   { id: 'sec-damp', title: 'Classifying the Damping', lede: 'These go with BDH Section 3.6, pages 337 to 342.' },
   { id: 'sec-forced', title: 'Homogeneous Plus Particular', lede: 'This goes with BDH Section 4.1, pages 388 to 393.' },
-  { id: 'sec-trial', title: 'Choosing the Trial Form', lede: 'This goes with BDH Section 4.1, pages 393 to 397, and the table of trial forms in Part 2 of the Reading Guide. Paul’s [Undetermined Coefficients](' + T_UC[0] + ') page is a second explanation. Paul writes `y_c` for our `y_h` and `Y_P` for our `y_p`.' },
+  { id: 'sec-trial', title: 'Choosing the Trial Form', lede: 'This goes with BDH Section 4.1, pages 393 to 397, and the table of trial forms in Finding a Particular Solution, in the Unit 6 Reading Guide, Part 2. Paul’s [Undetermined Coefficients](' + T_UC[0] + ') page is a second explanation. Paul writes `y_c` for our `y_h` and `Y_P` for our `y_p`.' },
   { id: 'sec-coef', title: 'Solving for the Coefficients', lede: 'These go with BDH Section 4.1, pages 393 to 397.' },
-  { id: 'sec-ivp', title: 'The Complete Initial Value Problem', lede: 'This goes with the note on initial value problems at the end of Part 2 of the Reading Guide. BDH Section 4.1 leaves these to its exercises.' }
+  { id: 'sec-ivp', title: 'The Complete Initial Value Problem', lede: 'This goes with the note on initial value problems at the end of Finding a Particular Solution, in the Unit 6 Reading Guide, Part 2. BDH Section 4.1 leaves these to its exercises.' }
 ];
 
 /* ---------------- the problems ---------------- */
@@ -2662,7 +2662,7 @@ var PROBLEMS = [
           [['0.23', '0.07', '-0.23', '-0.07'], 'The two terms do not peak together, so their coefficients do not simply add. Use `R = sqrt(C_1^2 + C_2^2)`.'],
           ['0.0289', 'That is `R^2`. Take the square root.'],
           ['17', 'Give `R` in meters: 17 cm is 0.17 m.']],
-        hints: ['Use `R = sqrt(C_1^2 + C_2^2)` from Part 1 of the Reading Guide.'],
+        hints: ['Use `R = sqrt(C_1^2 + C_2^2)` from Frequency and Amplitude in the Unit 6 Reading Guide, Part 1.'],
         sol: ['`R = sqrt(0.08^2 + 0.15^2) = sqrt(0.0289) = 0.17` m'] },
       { lead: 'Find the period, in seconds. Give an exact value or keep two decimal places.', ask: '"period" =', num: true, ans: 'pi/2', tol: 0.0051, units: 's', unitAlts: ['seconds', 'sec', 'second'], closeMsg: CLOSE2,
         wrongs: [['4', 'That is `ω_0`, in radians per second. One full swing takes `F{2π}{ω_0}` seconds.'],
@@ -2927,7 +2927,7 @@ var PROBLEMS = [
           ['14', 'Include the `6A` from `y_p″`: the terms without `t` are `6A + A = 7A`.'],
           ['3.5', 'The term without `t` in `y_p″` is `6A`: each term of `e^(3t) + 3te^(3t)` contributes `3Ae^(3t)`.']],
         hints: ['The terms without `t` are `6A` from `y_p″` and `A` from `y_p′`.'],
-        why: 'The Reading Guide’s shortcut gives the same: `A(2ar + b) = A(2 · 3 + 1) = 7A`.' },
+        why: 'The shortcut in the Unit 6 Reading Guide, Part 2 gives the same: `A(2ar + b) = A(2 · 3 + 1) = 7A`.' },
       { lead: 'Write the particular solution.', ask: 'y_p =', ans: '2te^(3t)', stray: [['A', 'Put in the number you found for `A`. This box takes only `t`.'], ['C', YP_C]],
         wrongs: [['2e^(3t)', 'Keep the factor `t` from the trial form, `y_p = Ate^(3t)`.'],
           ['14te^(3t)', 'Use the `A` you found, not the forcing’s 14.']],
